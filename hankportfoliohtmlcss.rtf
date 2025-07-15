@@ -1,0 +1,888 @@
+{\rtf1\ansi\ansicpg950\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red42\green44\blue51;\red255\green255\blue255;\red219\green63\blue57;
+\red167\green87\blue5;\red66\green147\blue62;\red143\green144\blue150;\red50\green94\blue238;}
+{\*\expandedcolortbl;;\cssrgb\c21961\c22745\c25882;\cssrgb\c100000\c100000\c100000;\cssrgb\c89412\c33725\c28627;
+\cssrgb\c71765\c41961\c392;\cssrgb\c31373\c63137\c30980;\cssrgb\c62745\c63137\c65490;\cssrgb\c25098\c47059\c94902;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<\cf4 \strokec4 html \cf5 \strokec5 lang\cf2 \strokec2 ="\cf6 \strokec6 zh-TW\cf2 \strokec2 ">\
+<\cf4 \strokec4 head\cf2 \strokec2 >\
+    <\cf4 \strokec4 meta \cf5 \strokec5 charset\cf2 \strokec2 ="\cf6 \strokec6 UTF-8\cf2 \strokec2 ">\
+    <\cf4 \strokec4 meta \cf5 \strokec5 name\cf2 \strokec2 ="\cf6 \strokec6 viewport\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 content\cf2 \strokec2 ="\cf6 \strokec6 width=device-width, initial-scale=1.0\cf2 \strokec2 ">\
+    <\cf4 \strokec4 title\cf2 \strokec2 >HANK Portfolio</\cf4 \strokec4 title\cf2 \strokec2 >\
+    <\cf4 \strokec4 link \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 rel\cf2 \strokec2 ="\cf6 \strokec6 stylesheet\cf2 \strokec2 ">\
+    <\cf4 \strokec4 style\cf2 \strokec2 >\
+        \cf6 \strokec6 *\cf2 \strokec2  \{\
+            \cf4 \strokec4 margin\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 box-sizing\cf2 \strokec2 : border-box;\
+        \}\
+\
+        \cf6 \strokec6 body\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-family\cf2 \strokec2 : \cf6 \strokec6 'Noto Sans TC'\cf2 \strokec2 , sans-serif;\
+            \cf4 \strokec4 line-height\cf2 \strokec2 : \cf5 \strokec5 1.6\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 background-color\cf2 \strokec2 : #ffffff;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Header */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 header\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 box-shadow\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 2\cf2 \strokec2 px \cf5 \strokec5 10\cf2 \strokec2 px \cf8 \strokec8 rgba\cf2 \strokec2 (\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0.1\cf2 \strokec2 );\
+            \cf4 \strokec4 position\cf2 \strokec2 : fixed;\
+            \cf4 \strokec4 top\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 100\cf2 \strokec2 %;\
+            \cf4 \strokec4 z-index\cf2 \strokec2 : \cf5 \strokec5 1000\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .header-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 max-width\cf2 \strokec2 : \cf5 \strokec5 1200\cf2 \strokec2 px;\
+            \cf4 \strokec4 margin\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  auto;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 justify-content\cf2 \strokec2 : space-between;\
+            \cf4 \strokec4 align-items\cf2 \strokec2 : center;\
+            \cf4 \strokec4 height\cf2 \strokec2 : \cf5 \strokec5 70\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .logo\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 24\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 700\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+        \}\
+\
+        \cf6 \strokec6 nav ul\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 list-style\cf2 \strokec2 : none;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 30\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 nav a\cf2 \strokec2  \{\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 400\cf2 \strokec2 ;\
+            \cf4 \strokec4 transition\cf2 \strokec2 : color \cf5 \strokec5 0.3\cf2 \strokec2 s;\
+        \}\
+\
+        \cf6 \strokec6 nav a:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Main Content */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 main\cf2 \strokec2  \{\
+            \cf4 \strokec4 margin-top\cf2 \strokec2 : \cf5 \strokec5 70\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .container\cf2 \strokec2  \{\
+            \cf4 \strokec4 max-width\cf2 \strokec2 : \cf5 \strokec5 1200\cf2 \strokec2 px;\
+            \cf4 \strokec4 margin\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  auto;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Hero Section */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .hero\cf2 \strokec2  \{\
+            \cf4 \strokec4 text-align\cf2 \strokec2 : center;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 100\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 background\cf2 \strokec2 : \cf8 \strokec8 linear-gradient\cf2 \strokec2 (\cf5 \strokec5 135\cf2 \strokec2 deg, #f8f9fa \cf5 \strokec5 0\cf2 \strokec2 %, #e9ecef \cf5 \strokec5 100\cf2 \strokec2 %);\
+        \}\
+\
+        \cf6 \strokec6 .hero h1\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 48\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 700\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .hero .tagline\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #666;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 300\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .cta-buttons\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 justify-content\cf2 \strokec2 : center;\
+            \cf4 \strokec4 flex-wrap\cf2 \strokec2 : wrap;\
+        \}\
+\
+        \cf6 \strokec6 .btn\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : inline-block;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px \cf5 \strokec5 30\cf2 \strokec2 px;\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 5\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+            \cf4 \strokec4 transition\cf2 \strokec2 : all \cf5 \strokec5 0.3\cf2 \strokec2 s;\
+            \cf4 \strokec4 border\cf2 \strokec2 : \cf5 \strokec5 2\cf2 \strokec2 px solid transparent;\
+        \}\
+\
+        \cf6 \strokec6 .btn-primary\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+        \}\
+\
+        \cf6 \strokec6 .btn-primary:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #a3d4b1;\
+            \cf4 \strokec4 transform\cf2 \strokec2 : \cf8 \strokec8 translateY\cf2 \strokec2 (\cf5 \strokec5 -2\cf2 \strokec2 px);\
+        \}\
+\
+        \cf6 \strokec6 .btn-outline\cf2 \strokec2  \{\
+            \cf4 \strokec4 border\cf2 \strokec2 : \cf5 \strokec5 2\cf2 \strokec2 px solid #B7E0C5;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 background\cf2 \strokec2 : transparent;\
+        \}\
+\
+        \cf6 \strokec6 .btn-outline:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 transform\cf2 \strokec2 : \cf8 \strokec8 translateY\cf2 \strokec2 (\cf5 \strokec5 -2\cf2 \strokec2 px);\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Featured Works Section */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .featured-works\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 80\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .section-title\cf2 \strokec2  \{\
+            \cf4 \strokec4 text-align\cf2 \strokec2 : center;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 36\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 700\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 60\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .works-grid\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : grid;\
+            \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf8 \strokec8 repeat\cf2 \strokec2 (auto-fit, \cf8 \strokec8 minmax\cf2 \strokec2 (\cf5 \strokec5 350\cf2 \strokec2 px, \cf5 \strokec5 1\cf2 \strokec2 fr));\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .work-card\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+            \cf4 \strokec4 overflow\cf2 \strokec2 : hidden;\
+            \cf4 \strokec4 box-shadow\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 5\cf2 \strokec2 px \cf5 \strokec5 20\cf2 \strokec2 px \cf8 \strokec8 rgba\cf2 \strokec2 (\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0.1\cf2 \strokec2 );\
+            \cf4 \strokec4 transition\cf2 \strokec2 : transform \cf5 \strokec5 0.3\cf2 \strokec2 s;\
+        \}\
+\
+        \cf6 \strokec6 .work-card:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 transform\cf2 \strokec2 : \cf8 \strokec8 translateY\cf2 \strokec2 (\cf5 \strokec5 -5\cf2 \strokec2 px);\
+        \}\
+\
+        \cf6 \strokec6 .work-image\cf2 \strokec2  \{\
+            \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 100\cf2 \strokec2 %;\
+            \cf4 \strokec4 height\cf2 \strokec2 : \cf5 \strokec5 200\cf2 \strokec2 px;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #f8f9fa;\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 align-items\cf2 \strokec2 : center;\
+            \cf4 \strokec4 justify-content\cf2 \strokec2 : center;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #999;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 14\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .work-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 30\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .work-title\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 600\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .work-description\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #666;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 14\cf2 \strokec2 px;\
+            \cf4 \strokec4 line-height\cf2 \strokec2 : \cf5 \strokec5 1.5\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .work-link\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : inline-block;\
+            \cf4 \strokec4 margin-top\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .work-link:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : underline;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* About Section */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .about-section\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 80\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #f8f9fa;\
+        \}\
+\
+        \cf6 \strokec6 .about-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : grid;\
+            \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf5 \strokec5 1\cf2 \strokec2 fr \cf5 \strokec5 1\cf2 \strokec2 fr;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 60\cf2 \strokec2 px;\
+            \cf4 \strokec4 align-items\cf2 \strokec2 : start;\
+        \}\
+\
+        \cf6 \strokec6 .about-text\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 16\cf2 \strokec2 px;\
+            \cf4 \strokec4 line-height\cf2 \strokec2 : \cf5 \strokec5 1.8\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #555;\
+        \}\
+\
+        \cf6 \strokec6 .about-text p\cf2 \strokec2  \{\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .skills-section\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+            \cf4 \strokec4 box-shadow\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 5\cf2 \strokec2 px \cf5 \strokec5 20\cf2 \strokec2 px \cf8 \strokec8 rgba\cf2 \strokec2 (\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0.1\cf2 \strokec2 );\
+        \}\
+\
+        \cf6 \strokec6 .skills-title\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 24\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 600\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 30\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .skills-grid\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : grid;\
+            \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf8 \strokec8 repeat\cf2 \strokec2 (auto-fit, \cf8 \strokec8 minmax\cf2 \strokec2 (\cf5 \strokec5 150\cf2 \strokec2 px, \cf5 \strokec5 1\cf2 \strokec2 fr));\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .skill-item\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px \cf5 \strokec5 15\cf2 \strokec2 px;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 25\cf2 \strokec2 px;\
+            \cf4 \strokec4 text-align\cf2 \strokec2 : center;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 14\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Portfolio Grid */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .portfolio-categories\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 justify-content\cf2 \strokec2 : center;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 px;\
+            \cf4 \strokec4 flex-wrap\cf2 \strokec2 : wrap;\
+        \}\
+\
+        \cf6 \strokec6 .category-btn\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 border\cf2 \strokec2 : \cf5 \strokec5 2\cf2 \strokec2 px solid #B7E0C5;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 25\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+            \cf4 \strokec4 transition\cf2 \strokec2 : all \cf5 \strokec5 0.3\cf2 \strokec2 s;\
+        \}\
+\
+        \cf6 \strokec6 .category-btn.active\cf2 \strokec2 ,\cf6 \strokec6 \
+        .category-btn:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Project Detail */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .project-detail\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 80\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .project-header\cf2 \strokec2  \{\
+            \cf4 \strokec4 text-align\cf2 \strokec2 : center;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 60\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .project-title\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 42\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 700\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .project-meta\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #666;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 16\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .project-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 max-width\cf2 \strokec2 : \cf5 \strokec5 800\cf2 \strokec2 px;\
+            \cf4 \strokec4 margin\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  auto;\
+        \}\
+\
+        \cf6 \strokec6 .project-section\cf2 \strokec2  \{\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .project-section h3\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 24\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 600\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 padding-bottom\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+            \cf4 \strokec4 border-bottom\cf2 \strokec2 : \cf5 \strokec5 2\cf2 \strokec2 px solid #B7E0C5;\
+        \}\
+\
+        \cf6 \strokec6 .project-section p\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 16\cf2 \strokec2 px;\
+            \cf4 \strokec4 line-height\cf2 \strokec2 : \cf5 \strokec5 1.8\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #555;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .project-images\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : grid;\
+            \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf8 \strokec8 repeat\cf2 \strokec2 (auto-fit, \cf8 \strokec8 minmax\cf2 \strokec2 (\cf5 \strokec5 300\cf2 \strokec2 px, \cf5 \strokec5 1\cf2 \strokec2 fr));\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 margin\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .project-image\cf2 \strokec2  \{\
+            \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 100\cf2 \strokec2 %;\
+            \cf4 \strokec4 height\cf2 \strokec2 : \cf5 \strokec5 200\cf2 \strokec2 px;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #f8f9fa;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 align-items\cf2 \strokec2 : center;\
+            \cf4 \strokec4 justify-content\cf2 \strokec2 : center;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #999;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Contact Form */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .contact-section\cf2 \strokec2  \{\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 80\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #f8f9fa;\
+        \}\
+\
+        \cf6 \strokec6 .contact-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : grid;\
+            \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf5 \strokec5 1\cf2 \strokec2 fr \cf5 \strokec5 1\cf2 \strokec2 fr;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 60\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .contact-info h3\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 24\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 600\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 30\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .contact-item\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 align-items\cf2 \strokec2 : center;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .contact-item a\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .contact-form\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+            \cf4 \strokec4 box-shadow\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 5\cf2 \strokec2 px \cf5 \strokec5 20\cf2 \strokec2 px \cf8 \strokec8 rgba\cf2 \strokec2 (\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0.1\cf2 \strokec2 );\
+        \}\
+\
+        \cf6 \strokec6 .form-group\cf2 \strokec2  \{\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .form-group label\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : block;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 5\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+        \}\
+\
+        \cf6 \strokec6 .form-group input\cf2 \strokec2 ,\cf6 \strokec6 \
+        .form-group textarea\cf2 \strokec2  \{\
+            \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 100\cf2 \strokec2 %;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 12\cf2 \strokec2 px;\
+            \cf4 \strokec4 border\cf2 \strokec2 : \cf5 \strokec5 2\cf2 \strokec2 px solid #e9ecef;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 5\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 16\cf2 \strokec2 px;\
+            \cf4 \strokec4 transition\cf2 \strokec2 : border-color \cf5 \strokec5 0.3\cf2 \strokec2 s;\
+        \}\
+\
+        \cf6 \strokec6 .form-group input:focus\cf2 \strokec2 ,\cf6 \strokec6 \
+        .form-group textarea:focus\cf2 \strokec2  \{\
+            \cf4 \strokec4 outline\cf2 \strokec2 : none;\
+            \cf4 \strokec4 border-color\cf2 \strokec2 : #B7E0C5;\
+        \}\
+\
+        \cf6 \strokec6 .form-group textarea\cf2 \strokec2  \{\
+            \cf4 \strokec4 resize\cf2 \strokec2 : vertical;\
+            \cf4 \strokec4 min-height\cf2 \strokec2 : \cf5 \strokec5 120\cf2 \strokec2 px;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Timeline */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 .timeline\cf2 \strokec2  \{\
+            \cf4 \strokec4 position\cf2 \strokec2 : relative;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+        \}\
+\
+        \cf6 \strokec6 .timeline::before\cf2 \strokec2  \{\
+            \cf4 \strokec4 content\cf2 \strokec2 : \cf6 \strokec6 ''\cf2 \strokec2 ;\
+            \cf4 \strokec4 position\cf2 \strokec2 : absolute;\
+            \cf4 \strokec4 left\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 %;\
+            \cf4 \strokec4 top\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 bottom\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 2\cf2 \strokec2 px;\
+            \cf4 \strokec4 background\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 transform\cf2 \strokec2 : \cf8 \strokec8 translateX\cf2 \strokec2 (\cf5 \strokec5 -50\cf2 \strokec2 %);\
+        \}\
+\
+        \cf6 \strokec6 .timeline-item\cf2 \strokec2  \{\
+            \cf4 \strokec4 position\cf2 \strokec2 : relative;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px;\
+            \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 %;\
+        \}\
+\
+        \cf6 \strokec6 .timeline-item:nth-child\cf2 \strokec2 (\cf6 \strokec6 odd\cf2 \strokec2 ) \{\
+            \cf4 \strokec4 left\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 padding-right\cf2 \strokec2 : \cf5 \strokec5 30\cf2 \strokec2 px;\
+            \cf4 \strokec4 text-align\cf2 \strokec2 : right;\
+        \}\
+\
+        \cf6 \strokec6 .timeline-item:nth-child\cf2 \strokec2 (\cf6 \strokec6 even\cf2 \strokec2 ) \{\
+            \cf4 \strokec4 left\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 %;\
+            \cf4 \strokec4 padding-left\cf2 \strokec2 : \cf5 \strokec5 30\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .timeline-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \cf4 \strokec4 border-radius\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+            \cf4 \strokec4 box-shadow\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf5 \strokec5 5\cf2 \strokec2 px \cf5 \strokec5 20\cf2 \strokec2 px \cf8 \strokec8 rgba\cf2 \strokec2 (\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0\cf2 \strokec2 ,\cf5 \strokec5 0.1\cf2 \strokec2 );\
+        \}\
+\
+        \cf6 \strokec6 .timeline-date\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 14\cf2 \strokec2 px;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 600\cf2 \strokec2 ;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .timeline-title\cf2 \strokec2  \{\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 18\cf2 \strokec2 px;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 600\cf2 \strokec2 ;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 margin-bottom\cf2 \strokec2 : \cf5 \strokec5 10\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .timeline-desc\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #666;\
+            \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 14\cf2 \strokec2 px;\
+            \cf4 \strokec4 line-height\cf2 \strokec2 : \cf5 \strokec5 1.6\cf2 \strokec2 ;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Footer */
+\f0\i0 \cf2 \strokec2 \
+        \cf6 \strokec6 footer\cf2 \strokec2  \{\
+            \cf4 \strokec4 background\cf2 \strokec2 : #333;\
+            \cf4 \strokec4 color\cf2 \strokec2 : #ffffff;\
+            \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px \cf5 \strokec5 0\cf2 \strokec2 ;\
+            \cf4 \strokec4 text-align\cf2 \strokec2 : center;\
+        \}\
+\
+        \cf6 \strokec6 .footer-content\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 justify-content\cf2 \strokec2 : space-between;\
+            \cf4 \strokec4 align-items\cf2 \strokec2 : center;\
+            \cf4 \strokec4 flex-wrap\cf2 \strokec2 : wrap;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .social-links\cf2 \strokec2  \{\
+            \cf4 \strokec4 display\cf2 \strokec2 : flex;\
+            \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px;\
+        \}\
+\
+        \cf6 \strokec6 .social-links a\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #B7E0C5;\
+            \cf4 \strokec4 text-decoration\cf2 \strokec2 : none;\
+            \cf4 \strokec4 font-weight\cf2 \strokec2 : \cf5 \strokec5 500\cf2 \strokec2 ;\
+            \cf4 \strokec4 transition\cf2 \strokec2 : color \cf5 \strokec5 0.3\cf2 \strokec2 s;\
+        \}\
+\
+        \cf6 \strokec6 .social-links a:hover\cf2 \strokec2  \{\
+            \cf4 \strokec4 color\cf2 \strokec2 : #ffffff;\
+        \}\
+\
+        
+\f1\i \cf7 \strokec7 /* Responsive Design */
+\f0\i0 \cf2 \strokec2 \
+        \cf5 \strokec5 @media \cf2 \strokec2 (\cf4 \strokec4 max-width\cf2 \strokec2 :\cf5 \strokec5  768px\cf2 \strokec2 ) \{\
+            \cf6 \strokec6 .header-content\cf2 \strokec2  \{\
+                \cf4 \strokec4 flex-direction\cf2 \strokec2 : column;\
+                \cf4 \strokec4 height\cf2 \strokec2 : auto;\
+                \cf4 \strokec4 padding\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 nav ul\cf2 \strokec2  \{\
+                \cf4 \strokec4 margin-top\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px;\
+                \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 15\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 main\cf2 \strokec2  \{\
+                \cf4 \strokec4 margin-top\cf2 \strokec2 : \cf5 \strokec5 120\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 .hero h1\cf2 \strokec2  \{\
+                \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 36\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 .hero .tagline\cf2 \strokec2  \{\
+                \cf4 \strokec4 font-size\cf2 \strokec2 : \cf5 \strokec5 16\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 .cta-buttons\cf2 \strokec2  \{\
+                \cf4 \strokec4 flex-direction\cf2 \strokec2 : column;\
+                \cf4 \strokec4 align-items\cf2 \strokec2 : center;\
+            \}\
+\
+            \cf6 \strokec6 .about-content\cf2 \strokec2  \{\
+                \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf5 \strokec5 1\cf2 \strokec2 fr;\
+                \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 .contact-content\cf2 \strokec2  \{\
+                \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf5 \strokec5 1\cf2 \strokec2 fr;\
+                \cf4 \strokec4 gap\cf2 \strokec2 : \cf5 \strokec5 40\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 .works-grid\cf2 \strokec2  \{\
+                \cf4 \strokec4 grid-template-columns\cf2 \strokec2 : \cf5 \strokec5 1\cf2 \strokec2 fr;\
+            \}\
+\
+            \cf6 \strokec6 .timeline::before\cf2 \strokec2  \{\
+                \cf4 \strokec4 left\cf2 \strokec2 : \cf5 \strokec5 20\cf2 \strokec2 px;\
+            \}\
+\
+            \cf6 \strokec6 .timeline-item\cf2 \strokec2  \{\
+                \cf4 \strokec4 width\cf2 \strokec2 : \cf5 \strokec5 100\cf2 \strokec2 %;\
+                \cf4 \strokec4 left\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf4 \strokec4 !important\cf2 \strokec2 ;\
+                \cf4 \strokec4 padding-left\cf2 \strokec2 : \cf5 \strokec5 50\cf2 \strokec2 px \cf4 \strokec4 !important\cf2 \strokec2 ;\
+                \cf4 \strokec4 padding-right\cf2 \strokec2 : \cf5 \strokec5 0\cf2 \strokec2  \cf4 \strokec4 !important\cf2 \strokec2 ;\
+                \cf4 \strokec4 text-align\cf2 \strokec2 : left \cf4 \strokec4 !important\cf2 \strokec2 ;\
+            \}\
+\
+            \cf6 \strokec6 .footer-content\cf2 \strokec2  \{\
+                \cf4 \strokec4 flex-direction\cf2 \strokec2 : column;\
+                \cf4 \strokec4 text-align\cf2 \strokec2 : center;\
+            \}\
+        \}\
+    </\cf4 \strokec4 style\cf2 \strokec2 >\
+</\cf4 \strokec4 head\cf2 \strokec2 >\
+<\cf4 \strokec4 body\cf2 \strokec2 >\
+    
+\f1\i \cf7 \strokec7 <!-- Header -->
+\f0\i0 \cf2 \strokec2 \
+    <\cf4 \strokec4 header\cf2 \strokec2 >\
+        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 header-content\cf2 \strokec2 ">\
+            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 logo\cf2 \strokec2 ">HANK Portfolio</\cf4 \strokec4 a\cf2 \strokec2 >\
+            <\cf4 \strokec4 nav\cf2 \strokec2 >\
+                <\cf4 \strokec4 ul\cf2 \strokec2 >\
+                    <\cf4 \strokec4 li\cf2 \strokec2 ><\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #home\cf2 \strokec2 ">\uc0\u39318 \u38913 </\cf4 \strokec4 a\cf2 \strokec2 ></\cf4 \strokec4 li\cf2 \strokec2 >\
+                    <\cf4 \strokec4 li\cf2 \strokec2 ><\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #about\cf2 \strokec2 ">\uc0\u38364 \u26044 \u25105 </\cf4 \strokec4 a\cf2 \strokec2 ></\cf4 \strokec4 li\cf2 \strokec2 >\
+                    <\cf4 \strokec4 li\cf2 \strokec2 ><\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #portfolio\cf2 \strokec2 ">\uc0\u20316 \u21697 \u38598 </\cf4 \strokec4 a\cf2 \strokec2 ></\cf4 \strokec4 li\cf2 \strokec2 >\
+                    <\cf4 \strokec4 li\cf2 \strokec2 ><\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #templates\cf2 \strokec2 ">\uc0\u25552 \u26696 </\cf4 \strokec4 a\cf2 \strokec2 ></\cf4 \strokec4 li\cf2 \strokec2 >\
+                    <\cf4 \strokec4 li\cf2 \strokec2 ><\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #contact\cf2 \strokec2 ">\uc0\u32879 \u32097 \u25105 </\cf4 \strokec4 a\cf2 \strokec2 ></\cf4 \strokec4 li\cf2 \strokec2 >\
+                </\cf4 \strokec4 ul\cf2 \strokec2 >\
+            </\cf4 \strokec4 nav\cf2 \strokec2 >\
+        </\cf4 \strokec4 div\cf2 \strokec2 >\
+    </\cf4 \strokec4 header\cf2 \strokec2 >\
+\
+    
+\f1\i \cf7 \strokec7 <!-- Main Content -->
+\f0\i0 \cf2 \strokec2 \
+    <\cf4 \strokec4 main\cf2 \strokec2 >\
+        
+\f1\i \cf7 \strokec7 <!-- Hero Section -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 id\cf2 \strokec2 ="\cf6 \strokec6 home\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 hero\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 h1\cf2 \strokec2 >HANK Portfolio</\cf4 \strokec4 h1\cf2 \strokec2 >\
+                <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 tagline\cf2 \strokec2 ">\uc0\u12300 \u36889 \u20123 \u25552 \u26696 \u12289 \u22294 \u20687 \u12289 \u25991 \u23383 \u65292 \u26159 \u25105 \u21644 \u19990 \u30028 \u23565 \u35441 \u30340 \u26041 \u24335 \u12290 \u12301 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 cta-buttons\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #contact\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 btn btn-primary\cf2 \strokec2 ">\uc0\u32879 \u32097 \u25105 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 btn btn-outline\cf2 \strokec2 ">\uc0\u19979 \u36617 \u23653 \u27511 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #portfolio\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 btn btn-outline\cf2 \strokec2 ">\uc0\u30475 \u20840 \u37096 \u20316 \u21697 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+            </\cf4 \strokec4 div\cf2 \strokec2 >\
+        </\cf4 \strokec4 section\cf2 \strokec2 >\
+\
+        
+\f1\i \cf7 \strokec7 <!-- Featured Works -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 featured-works\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 h2 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 section-title\cf2 \strokec2 ">\uc0\u31934 \u36984 \u20316 \u21697 </\cf4 \strokec4 h2\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 works-grid\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21697 \u29260 \u34892 \u37559 \u20225 \u21123 \u26696 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u23436 \u25972 \u30340 \u21697 \u29260 \u31574 \u30053 \u35215 \u21123 \u65292 \u21253 \u21547 \u24066 \u22580 \u20998 \u26512 \u12289 \u30446 \u27161 \u21463 \u30526 \u23450 \u20301 \u21450 \u22519 \u34892 \u26041 \u26696 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u23637 \u35261 \u27963 \u21205 \u35215 \u21123 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u24478 \u27010 \u24565 \u30332 \u24819 \u21040 \u29694 \u22580 \u22519 \u34892 \u65292 \u25171 \u36896 \u28145 \u24230 \u39636 \u39511 \u30340 \u23637 \u35261 \u27963 \u21205 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21109 \u20316 \u25885 \u24433 \u31995 \u21015 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u36879 \u36942 \u37857 \u38957 \u25429 \u25417 \u29983 \u27963 \u20013 \u30340 \u32654 \u22909 \u30636 \u38291 \u65292 \u23637 \u29694 \u29544 \u29305 \u30340 \u35222 \u35258 \u39080 \u26684 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+            </\cf4 \strokec4 div\cf2 \strokec2 >\
+        </\cf4 \strokec4 section\cf2 \strokec2 >\
+\
+        
+\f1\i \cf7 \strokec7 <!-- About Section -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 id\cf2 \strokec2 ="\cf6 \strokec6 about\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 about-section\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 h2 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 section-title\cf2 \strokec2 ">\uc0\u38364 \u26044 \u25105 </\cf4 \strokec4 h2\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 about-content\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 about-text\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 p\cf2 \strokec2 >\uc0\u25105 \u26159 \u19968 \u20301 \u29105 \u24859 \u21109 \u24847 \u33287 \u31574 \u30053 \u24605 \u32771 \u30340 \u34892 \u37559 \u20225 \u21123 \u20154 \u12290 \u25793 \u26377 \u35920 \u23500 \u30340 \u21697 \u29260 \u34892 \u37559 \u32147 \u39511 \u65292 \u25797 \u38263 \u23559 \u25277 \u35937 \u30340 \u27010 \u24565 \u36681 \u21270 \u28858 \u20855 \u39636 \u30340 \u22519 \u34892 \u26041 \u26696 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                        <\cf4 \strokec4 p\cf2 \strokec2 >\uc0\u22312 \u25105 \u30340 \u32887 \u26989 \u29983 \u28079 \u20013 \u65292 \u25105 \u23560 \u27880 \u26044 \u25972 \u21512 \u34892 \u37559 \u20659 \u25773 \u12289 \u27963 \u21205 \u20225 \u21123 \u33287 \u25976 \u20301 \u20839 \u23481 \u21109 \u20316 \u12290 \u30456 \u20449 \u22909 \u30340 \u20225 \u21123 \u19981 \u20677 \u35201 \u26377 \u21109 \u24847 \u65292 \u26356 \u35201 \u33021 \u22816 \u31934 \u28310 \u35320 \u21450 \u30446 \u27161 \u21463 \u30526 \u65292 \u21109 \u36896 \u23526 \u38555 \u30340 \u21830 \u26989 \u20729 \u20540 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                        <\cf4 \strokec4 p\cf2 \strokec2 >\uc0\u38500 \u20102 \u23560 \u26989 \u25216 \u33021 \u22806 \u65292 \u25105 \u20063 \u29105 \u24859 \u25885 \u24433 \u33287 \u35222 \u35258 \u21109 \u20316 \u65292 \u36889 \u20123 \u21109 \u20316 \u32147 \u39511 \u35731 \u25105 \u22312 \u20225 \u21123 \u24037 \u20316 \u20013 \u33021 \u22816 \u26356 \u25935 \u37555 \u22320 \u25484 \u25569 \u35222 \u35258 \u28317 \u36890 \u30340 \u21147 \u37327 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skills-section\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skills-title\cf2 \strokec2 ">\uc0\u23560 \u26989 \u25216 \u33021 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skills-grid\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">\uc0\u34892 \u37559 \u20225 \u21123 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">\uc0\u27963 \u21205 \u35215 \u21123 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">\uc0\u21697 \u29260 \u31574 \u30053 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">\uc0\u20839 \u23481 \u21109 \u20316 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">HTML/CSS</\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">Notion</\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">Canva</\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">\uc0\u25885 \u24433 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">Adobe Creative</\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 skill-item\cf2 \strokec2 ">\uc0\u23560 \u26696 \u31649 \u29702 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+                \
+                
+\f1\i \cf7 \strokec7 <!-- Timeline -->
+\f0\i0 \cf2 \strokec2 \
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-item\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-date\cf2 \strokec2 ">2022 - 2024</\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-title\cf2 \strokec2 ">\uc0\u21697 \u29260 \u34892 \u37559 \u32147 \u29702 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-desc\cf2 \strokec2 ">\uc0\u36000 \u36012 \u21697 \u29260 \u25972 \u39636 \u34892 \u37559 \u31574 \u30053 \u35215 \u21123 \u33287 \u22519 \u34892 \u65292 \u21253 \u21547 \u25976 \u20301 \u34892 \u37559 \u12289 \u27963 \u21205 \u20225 \u21123 \u12289 \u20839 \u23481 \u21109 \u20316 \u31561 \u12290 \u25104 \u21151 \u25552 \u21319 \u21697 \u29260 \u30693 \u21517 \u24230 30%\u65292 \u20006 \u24314 \u31435 \u23436 \u25972 \u30340 \u21697 \u29260 \u35672 \u21029 \u31995 \u32113 \u12290 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-item\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-date\cf2 \strokec2 ">2020 - 2022</\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-title\cf2 \strokec2 ">\uc0\u27963 \u21205 \u20225 \u21123 \u23560 \u21729 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 timeline-desc\cf2 \strokec2 ">\uc0\u23560 \u36012 \u22823 \u22411 \u27963 \u21205 \u30340 \u20225 \u21123 \u33287 \u22519 \u34892 \u65292 \u24478 \u27010 \u24565 \u30332 \u24819 \u21040 \u29694 \u22580 \u31649 \u29702 \u12290 \u32047 \u31309 \u22519 \u34892 \u36229 \u36942 50\u22580 \u27963 \u21205 \u32147 \u39511 \u65292 \u21443 \u33287 \u20154 \u25976 \u32317 \u35336 \u36229 \u36942 10,000\u20154 \u27425 \u12290 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+                \
+                <\cf4 \strokec4 div \cf5 \strokec5 style\cf2 \strokec2 ="\cf6 \strokec6 text-align: center; margin-top: 40px;\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 btn btn-primary\cf2 \strokec2 ">\uc0\u19979 \u36617 \u23436 \u25972 \u23653 \u27511 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+            </\cf4 \strokec4 div\cf2 \strokec2 >\
+        </\cf4 \strokec4 section\cf2 \strokec2 >\
+\
+        
+\f1\i \cf7 \strokec7 <!-- Portfolio Section -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 id\cf2 \strokec2 ="\cf6 \strokec6 portfolio\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 featured-works\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 h2 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 section-title\cf2 \strokec2 ">\uc0\u20316 \u21697 \u38598 </\cf4 \strokec4 h2\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 portfolio-categories\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 category-btn active\cf2 \strokec2 ">\uc0\u20840 \u37096 \u20316 \u21697 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 category-btn\cf2 \strokec2 ">\uc0\u34892 \u37559 \u33287 \u20225 \u21123 \u23560 \u26696 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 category-btn\cf2 \strokec2 ">\uc0\u23637 \u35261 \u33287 \u27963 \u21205 \u35215 \u21123 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                    <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 category-btn\cf2 \strokec2 ">\uc0\u21109 \u20316 \u33287 \u25885 \u24433 \u20316 \u21697 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 works-grid\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21697 \u29260 \u37325 \u22609 \u20225 \u21123 \u26696 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u28858 \u20659 \u32113 \u20225 \u26989 \u36914 \u34892 \u21697 \u29260 \u37325 \u22609 \u65292 \u21253 \u21547 \u21697 \u29260 \u23450 \u20301 \u12289 \u35222 \u35258 \u35672 \u21029 \u33287 \u34892 \u37559 \u31574 \u30053 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u29986 \u21697 \u30332 \u34920 \u26371 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u31574 \u21123 \u20006 \u22519 \u34892 \u22823 \u22411 \u29986 \u21697 \u30332 \u34920 \u26371 \u65292 \u32080 \u21512 \u32218 \u19978 \u32218 \u19979 \u39636 \u39511 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u25991 \u21270 \u23637 \u35261 \u20225 \u21123 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u32080 \u21512 \u22312 \u22320 \u25991 \u21270 \u33287 \u29694 \u20195 \u35373 \u35336 \u30340 \u23637 \u35261 \u20225 \u21123 \u33287 \u22519 \u34892 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21830 \u26989 \u25885 \u24433 \u31995 \u21015 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u28858 \u21697 \u29260 \u25171 \u36896 \u23560 \u23660 \u30340 \u21830 \u26989 \u25885 \u24433 \u20316 \u21697 \u65292 \u23637 \u29694 \u29986 \u21697 \u29305 \u33394 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u25976 \u20301 \u34892 \u37559 \u20225 \u21123 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u25972 \u21512 \u31038 \u32676 \u23186 \u39636 \u12289 \u20839 \u23481 \u34892 \u37559 \u33287 \u20184 \u36027 \u24291 \u21578 \u30340 \u25976 \u20301 \u34892 \u37559 \u31574 \u30053 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u20316 \u21697 \u22294 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21109 \u24847 \u24037 \u20316 \u22346 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u35373 \u35336 \u20006 \u20027 \u25345 \u21109 \u24847 \u24605 \u32771 \u24037 \u20316 \u22346 \u65292 \u28608 \u30332 \u22296 \u38538 \u21109 \u26032 \u24605 \u32173 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u35443 \u24773  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+            </\cf4 \strokec4 div\cf2 \strokec2 >\
+        </\cf4 \strokec4 section\cf2 \strokec2 >\
+\
+        
+\f1\i \cf7 \strokec7 <!-- Project Detail Example -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 id\cf2 \strokec2 ="\cf6 \strokec6 project-detail\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-detail\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 style\cf2 \strokec2 ="\cf6 \strokec6 display: none;\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-header\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 h1 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-title\cf2 \strokec2 ">\uc0\u21697 \u29260 \u37325 \u22609 \u20225 \u21123 \u26696 </\cf4 \strokec4 h1\cf2 \strokec2 >\
+                    <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-meta\cf2 \strokec2 ">\uc0\u34892 \u37559 \u33287 \u20225 \u21123 \u23560 \u26696  \'95 2023\u24180 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-content\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-section\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 h3\cf2 \strokec2 >\uc0\u23560 \u26696 \u32972 \u26223 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                        <\cf4 \strokec4 p\cf2 \strokec2 >\uc0\u23458 \u25142 \u28858 \u25793 \u26377 30\u24180 \u27511 \u21490 \u30340 \u20659 \u32113 \u35069 \u36896 \u26989 \u20844 \u21496 \u65292 \u38754 \u33256 \u24066 \u22580 \u31478 \u29229 \u28608 \u28872 \u12289 \u21697 \u29260 \u32769 \u21270 \u31561 \u25361 \u25136 \u12290 \u38656 \u35201 \u36879 \u36942 \u21697 \u29260 \u37325 \u22609 \u20358 \u37325 \u26032 \u23450 \u20301 \u65292 \u21560 \u24341 \u24180 \u36629 \u28040 \u36027 \u32676 \u39636 \u65292 \u20006 \u25552 \u21319 \u24066 \u22580 \u31478 \u29229 \u21147 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-section\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 h3\cf2 \strokec2 >\uc0\u35299 \u27770 \u26041 \u26696 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                        <\cf4 \strokec4 p\cf2 \strokec2 >\uc0\u36879 \u36942 \u28145 \u24230 \u24066 \u22580 \u30740 \u31350 \u33287 \u21697 \u29260 \u35386 \u26039 \u65292 \u25105 \u20497 \u37325 \u26032 \u23450 \u32681 \u21697 \u29260 \u26680 \u24515 \u20729 \u20540 \u65292 \u21109 \u36896 \u12300 \u20659 \u32113 \u24037 \u34269 \'d7\u29694 \u20195 \u35373 \u35336 \u12301 \u30340 \u21697 \u29260 \u23450 \u20301 \u12290 \u21516 \u26178 \u35373 \u35336 \u20840 \u26032 \u30340 \u35222 \u35258 \u35672 \u21029 \u31995 \u32113 \u65292 \u20006 \u35215 \u21123 \u19968 \u31995 \u21015 \u25972 \u21512 \u34892 \u37559 \u27963 \u21205 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-images\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-image\cf2 \strokec2 ">\uc0\u21697 \u29260 \u35672 \u21029 \u35373 \u35336 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-image\cf2 \strokec2 ">\uc0\u34892 \u37559 \u29289 \u26009 \u35373 \u35336 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-image\cf2 \strokec2 ">\uc0\u27963 \u21205 \u29694 \u22580 \u29031 \u29255 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 project-section\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 h3\cf2 \strokec2 >\uc0\u22519 \u34892 \u25104 \u26524 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                        <\cf4 \strokec4 p\cf2 \strokec2 >\uc0\u26032 \u21697 \u29260 \u35672 \u21029 \u29554 \u24471 \u24066 \u22580 \u27491 \u38754 \u22238 \u38911 \u65292 \u21697 \u29260 \u30693 \u21517 \u24230 \u25552 \u21319 35%\u65292 \u24180 \u36629 \u23458 \u32676 \u21344 \u27604 \u24478 20%\u25552 \u21319 \u33267 45%\u12290 \u21516 \u26178 \u21332 \u21161 \u23458 \u25142 \u29554 \u24471 \u22810 \u38917 \u35373 \u35336 \u29518 \u38917 \u65292 \u25104 \u21151 \u36681 \u22411 \u28858 \u20855 \u26377 \u29694 \u20195 \u24863 \u30340 \u21697 \u29260 \u24418 \u35937 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+            </\cf4 \strokec4 div\cf2 \strokec2 >\
+        </\cf4 \strokec4 section\cf2 \strokec2 >\
+\
+        
+\f1\i \cf7 \strokec7 <!-- Templates Section -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 id\cf2 \strokec2 ="\cf6 \strokec6 templates\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 about-section\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 h2 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 section-title\cf2 \strokec2 ">\uc0\u25552 \u26696 \u31684 \u20363 </\cf4 \strokec4 h2\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 works-grid\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u31777 \u22577 \u38928 \u35261 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21697 \u29260 \u31574 \u30053 \u25552 \u26696 \u31777 \u22577 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u23436 \u25972 \u30340 \u21697 \u29260 \u31574 \u30053 \u25552 \u26696 \u31777 \u22577 \u27171 \u26495 \u65292 \u21253 \u21547 \u24066 \u22580 \u20998 \u26512 \u12289 \u31478 \u29229 \u23565 \u25163 \u20998 \u26512 \u12289 \u21697 \u29260 \u23450 \u20301 \u31561 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u19979 \u36617  PDF \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u27969 \u31243 \u22294 \u38928 \u35261 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u27963 \u21205 \u22519 \u34892 \u27969 \u31243 \u34920 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u35443 \u32048 \u30340 \u27963 \u21205 \u22519 \u34892 \u26178 \u31243 \u34920 \u65292 \u21253 \u21547 \u21069 \u32622 \u28310 \u20633 \u12289 \u22519 \u34892 \u38542 \u27573 \u12289 \u24460 \u32396 \u36861 \u36452 \u31561 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u31684 \u20363  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-card\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-image\cf2 \strokec2 ">\uc0\u26550 \u27083 \u22294 \u38928 \u35261 </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-content\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 h3 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-title\cf2 \strokec2 ">\uc0\u21697 \u29260 \u31574 \u30053 \u26550 \u27083 \u22294 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                            <\cf4 \strokec4 p \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-description\cf2 \strokec2 ">\uc0\u35222 \u35258 \u21270 \u30340 \u21697 \u29260 \u31574 \u30053 \u26550 \u27083 \u22294 \u65292 \u28165 \u26970 \u23637 \u29694 \u21697 \u29260 \u21508 \u20491 \u38754 \u21521 \u30340 \u38364 \u32879 \u24615 \u12290 </\cf4 \strokec4 p\cf2 \strokec2 >\
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 work-link\cf2 \strokec2 ">\uc0\u26597 \u30475 \u31684 \u20363  \u8594 </\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                    </\cf4 \strokec4 div\cf2 \strokec2 >\
+                </\cf4 \strokec4 div\cf2 \strokec2 >\
+            </\cf4 \strokec4 div\cf2 \strokec2 >\
+        </\cf4 \strokec4 section\cf2 \strokec2 >\
+\
+        
+\f1\i \cf7 \strokec7 <!-- Contact Section -->
+\f0\i0 \cf2 \strokec2 \
+        <\cf4 \strokec4 section \cf5 \strokec5 id\cf2 \strokec2 ="\cf6 \strokec6 contact\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 contact-section\cf2 \strokec2 ">\
+            <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 container\cf2 \strokec2 ">\
+                <\cf4 \strokec4 h2 \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 section-title\cf2 \strokec2 ">\uc0\u32879 \u32097 \u25105 </\cf4 \strokec4 h2\cf2 \strokec2 >\
+                <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 contact-content\cf2 \strokec2 ">\
+                    <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 contact-info\cf2 \strokec2 ">\
+                        <\cf4 \strokec4 h3\cf2 \strokec2 >\uc0\u32879 \u32097 \u36039 \u35338 </\cf4 \strokec4 h3\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 contact-item\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 strong\cf2 \strokec2 >Email:</\cf4 \strokec4 strong\cf2 \strokec2 > \
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 mailto:hank@example.com\cf2 \strokec2 ">hank@example.com</\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 contact-item\cf2 \strokec2 ">\
+                            <\cf4 \strokec4 strong\cf2 \strokec2 >LinkedIn:</\cf4 \strokec4 strong\cf2 \strokec2 > \
+                            <\cf4 \strokec4 a \cf5 \strokec5 href\cf2 \strokec2 ="\cf6 \strokec6 #\cf2 \strokec2 "\cf4 \strokec4  \cf5 \strokec5 target\cf2 \strokec2 ="\cf6 \strokec6 _blank\cf2 \strokec2 ">linkedin.com/in/hank</\cf4 \strokec4 a\cf2 \strokec2 >\
+                        </\cf4 \strokec4 div\cf2 \strokec2 >\
+                        <\cf4 \strokec4 div \cf5 \strokec5 class\cf2 \strokec2 ="\cf6 \strokec6 contact-item\cf2 \strokec2 ">}
